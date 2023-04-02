@@ -21,6 +21,7 @@ https://www.youtube.com/watch?v=sd_7ahFiukY
 требует слишком большого количества ресурсов на исполнение.
 
 ## Обход в ширину
+Код обхода в ширину [Width.java](https://github.com/ShumAhd/Lesson-4.-Data-structures-tree-and-hash-table/blob/main/Width.java)
 
 Обход в ширину предполагает, что мы не обрабатываем детей до тех пор, пока все
 родителя одного уровня не были обработаны. Давайте рассмотрим пример, при
