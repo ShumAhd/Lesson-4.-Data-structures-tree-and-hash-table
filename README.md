@@ -10,7 +10,7 @@
 https://www.youtube.com/watch?v=sd_7ahFiukY
 
 ## Обход дерева в гулбину
-[Tree.java](https://github.com/ShumAhd/Lesson-4.-Data-structures-tree-and-hash-table/blob/main/Tree.java)
+Код дерева в глубину [Tree.java](https://github.com/ShumAhd/Lesson-4.-Data-structures-tree-and-hash-table/blob/main/Tree.java)
 
 Самым простым с точки зрения обхода, является обход в глубину. Это рекурсивный
 подход к перебору всех значений в дереве, построенный на вызове всех доступных
