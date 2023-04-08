@@ -2,6 +2,9 @@ package RedBlackTreeLesson4;
 
 public class RedBlackTree {
 
+  public static void main(String[] args) {
+
+  }
   private Node root; //элемент с которого начинаем работу
 
   public boolean add(int value) {
