@@ -1,13 +1,20 @@
 package RedBlackTreeLesson4;
 
-import java.awt.Color;
-
 public class RedBlackTree {
 
   private Node root; //элемент с которого начинаем работу
 
   public boolean add(int value) {
-
+    if (root != null) {
+      boolean result = addNode(root, value);
+      root = rebalnce(root);
+      return result;
+    } else {
+      root = new Node();
+      root.color = Color.BLACK;
+      root.value = value;
+      return true;
+    }
   }
 
   /**
@@ -64,20 +71,20 @@ public class RedBlackTree {
       needRebalance = false;
       //Если правый красный, а левый чёрный, то правый поворот
       if (result.rightChild != null && result.rightChild.color == Color.RED &&
-          (result.leftChild == null || result.leftChild.color == Color.BLACK)){
+          (result.leftChild == null || result.leftChild.color == Color.BLACK)) {
         needRebalance = true;
         result = rightSwap(result);
       }
       //Если левый ребёнок красный и у него есть ещё свой ребёнок и он тоже красный,
       //Тогда левый поворот
       if (result.leftChild != null && result.leftChild.color == Color.RED &&
-          result.leftChild.leftChild == null || result.leftChild.leftChild.color == Color.RED){
+          result.leftChild.leftChild == null || result.leftChild.leftChild.color == Color.RED) {
         needRebalance = true;
         result = leftSwap(result);
       }
       //Если и правый и левый имеют красный цвет, тогда производим смену цвета
       if (result.leftChild != null && result.leftChild.color == Color.RED &&
-          result.rightChild != null && result.rightChild.color == Color.RED){
+          result.rightChild != null && result.rightChild.color == Color.RED) {
         needRebalance = true;
         result = leftSwap(result);
       }
