@@ -1,5 +1,7 @@
 package RedBlackTreeLesson4;
 
+import java.awt.Color;
+
 public class RedBlackTree {
 
   private Node root; //элемент с которого начинаем работу
@@ -59,6 +61,17 @@ public class RedBlackTree {
 
   private Node leftSwap(Node node) {
 
+  }
+
+  /**
+   * Метод смены цвета ноды
+   * Дети становятся чёрными, а сама ноды становится красной
+   * @param node
+   */
+  private void colorSwap(Node node) {
+    node.rightChild.color = Color.BLACK;
+    node.leftChild.color = Color.BLACK;
+    node.color = Color.RED;
   }
 
   private class Node {
