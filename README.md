@@ -72,5 +72,7 @@ https://www.youtube.com/watch?v=sd_7ahFiukY
 
 [RedBlackTree.java](https://github.com/ShumAhd/Lesson-4.-Data-structures-tree-and-hash-table/blob/main/RedBlackTreeLesson4/RedBlackTree.java)
 
+Код не рисует дерево в терминале, это к сожалению очень нетривиальная задача,
+по этому при запуске кода ни чего не произойдёт ))
 
 
