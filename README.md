@@ -75,4 +75,10 @@ https://www.youtube.com/watch?v=sd_7ahFiukY
 Код не рисует дерево в терминале, это к сожалению очень нетривиальная задача,
 по этому при запуске кода ни чего не произойдёт ))
 
+---
+[Сертификат](https://gb.ru/certificates/2355392.pdf)
+
+<image src="https://gb.ru/certificates/2355392.pdf" alt="Сертификат">
+
+
 
