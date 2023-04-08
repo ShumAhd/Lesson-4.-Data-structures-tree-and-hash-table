@@ -76,9 +76,4 @@ https://www.youtube.com/watch?v=sd_7ahFiukY
 по этому при запуске кода ни чего не произойдёт ))
 
 ---
-[Сертификат](https://gb.ru/certificates/2355392.pdf)
-
-<image src="https://gb.ru/certificates/2355392.pdf" alt="Сертификат">
-
-
-
+[Ссылка на сертификат об окончании курса лекции](https://gb.ru/go/kvFdW7)
