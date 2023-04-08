@@ -68,5 +68,9 @@ https://www.youtube.com/watch?v=sd_7ahFiukY
 самоддерживаемую структуру, имеющую очень высокую скорость поиска
 элементов.
 
+## Красно-Чёрное дерево
+
+[RedBlackTree.java](https://github.com/ShumAhd/Lesson-4.-Data-structures-tree-and-hash-table/blob/main/RedBlackTreeLesson4/RedBlackTree.java)
+
 
 
