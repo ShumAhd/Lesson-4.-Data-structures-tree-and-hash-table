@@ -1,5 +1,7 @@
 package RedBlackTreeLesson4;
 
+import java.awt.Color;
+
 public class RedBlackTree {
 
   private Node root; //элемент с которого начинаем работу
@@ -49,8 +51,39 @@ public class RedBlackTree {
     }
   }
 
+  /**
+   * Метод ребалансировки
+   *
+   * @param node
+   * @return
+   */
   private Node rebalnce(Node node) {
-
+    Node result = node;
+    boolean needRebalance;
+    do {
+      needRebalance = false;
+      //Если правый красный, а левый чёрный, то правый поворот
+      if (result.rightChild != null && result.rightChild.color == Color.RED &&
+          (result.leftChild == null || result.leftChild.color == Color.BLACK)){
+        needRebalance = true;
+        result = rightSwap(result);
+      }
+      //Если левый ребёнок красный и у него есть ещё свой ребёнок и он тоже красный,
+      //Тогда левый поворот
+      if (result.leftChild != null && result.leftChild.color == Color.RED &&
+          result.leftChild.leftChild == null || result.leftChild.leftChild.color == Color.RED){
+        needRebalance = true;
+        result = leftSwap(result);
+      }
+      //Если и правый и левый имеют красный цвет, тогда производим смену цвета
+      if (result.leftChild != null && result.leftChild.color == Color.RED &&
+          result.rightChild != null && result.rightChild.color == Color.RED){
+        needRebalance = true;
+        result = leftSwap(result);
+      }
+    }
+    while (needRebalance);
+    return result;
   }
 
   /**
